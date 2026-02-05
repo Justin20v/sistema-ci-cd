@@ -1,0 +1,26 @@
+name: Flujo CI/CD Académico
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Simulación de instalación de dependencias
+        run: echo "Instalando dependencias..."
+
+      - name: Simulación de pruebas
+        run: echo "Ejecutando pruebas automatizadas..."
+
+      - name: Simulación de build
+        run: echo "Construyendo la aplicación..."
+
+      - name: Preparación para despliegue
+        run: echo "Aplicación lista para despliegue"
